@@ -1,5 +1,3 @@
-# ftl
-
 Тестовое задание
 
 ## Project setup
