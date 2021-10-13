@@ -1,26 +1,55 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Forms />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import Forms from '@/components/Forms.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+    Forms,
   },
 };
 </script>
 
 <style lang="scss">
+
+body, body:before, body:after, 
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url('./assets/fonts/HelveticaNeueRegular.woff');
+  font: {
+    weight: 400;
+  }
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url('./assets/fonts/HelveticaNeueBold.woff');
+  font: {
+    weight: 700;
+  }
+}
+
+$primary-color: #343539;
+
+body {
+  background: $primary-color;
+  font-family: Helvetica, sans-serif;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Helvetica, sans-serif;
+  font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
+
 </style>
